@@ -6,8 +6,10 @@ require 'csv'
 puts "ファイル名を入力してください"
 filename = gets.chomp
 
+
 # 入力したファイル名に拡張子がなければ .csv を付ける
 filename += ".csv" unless filename.end_with?(".csv")
+
 
 puts "1: 新規作成 2: 既存ファイル編集"
 choice = gets.chomp
